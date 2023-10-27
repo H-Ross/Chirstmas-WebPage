@@ -72,4 +72,4 @@ function updateImage() {
 
 setInterval(() => Snowfall.snowFall(), 20);
 // Call the updateImage function when the page loads
-window.onload = updateImage;
+//window.onload = updateImage;
