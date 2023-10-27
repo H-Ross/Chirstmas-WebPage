@@ -39,3 +39,8 @@ body {
     font-size: 1.5em;
     text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
 }
+
+#daily-image {
+    width: 400px;
+    height: auto;
+}

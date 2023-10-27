@@ -17,12 +17,12 @@ const backgroundImage = new Image();
 backgroundImage.src = "./images/sthlm.jpg";
 
 const flakes = [];
-class snowfall {
+class Snowfall {
 
     static snowFall() {
         ctx.drawImage(backgroundImage, 0, 0, w, h);
-        snowfall.addFlakes();
-        snowfall.addSnow();
+        Snowfall.addFlakes();
+        Snowfall.addSnow();
     };
 
     static addFlakes() {
@@ -52,5 +52,24 @@ class snowfall {
         }
     };
 }
-//tes
-setInterval(() => snowfall.snowFall(), 20);
+
+function updateImage() {
+    const currentDate = new Date();
+    const currentDay = currentDate.getDate();
+
+    // You can create an array of image URLs for each day
+    const imageUrls = [
+        "./images/grinch.jpg",
+        "./images/polarExpress.jpg",
+        "./images/homeAlone.jpg",
+        // Add URLs for each day
+    ];
+
+    // Set the image source based on the current day
+    const dailyImage = document.getElementById("daily-image");
+    dailyImage.src = imageUrls[currentDay - 1];
+}
+
+setInterval(() => Snowfall.snowFall(), 20);
+// Call the updateImage function when the page loads
+window.onload = updateImage;
