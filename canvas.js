@@ -55,7 +55,7 @@ class Snowfall {
 
 function updateImage() {
     const currentDate = new Date(2023, 11, 1);
-    //const currentDay = currentDate.getDate();
+    const currentDay = currentDate.getDate();
 
     // You can create an array of image URLs for each day
     const imageUrls = [
