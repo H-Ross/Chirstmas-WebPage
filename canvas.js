@@ -54,7 +54,7 @@ class Snowfall {
 }
 
 function updateImage() {
-    const currentDate = new Date(2023, 11, 1);
+    const currentDate = new Date(2023, 11, 3);
     const currentDay = currentDate.getDate();
 
     // You can create an array of image URLs for each day
@@ -65,9 +65,20 @@ function updateImage() {
         // Add URLs for each day
     ];
 
+    const moviePlatforms = [
+        "Netflix",
+        "Disney+",
+        "HBO Max",
+
+    ];
+
     // Set the image source based on the current day
     const dailyImage = document.getElementById("daily-image");
     dailyImage.src = imageUrls[currentDay - 1];
+
+    // Set the movie platform source based on the current day
+    const dailyPlatform = document.getElementById("daily-platform");
+    dailyPlatform.textContent = moviePlatforms[currentDay - 1];
 }
 
 setInterval(() => Snowfall.snowFall(), 20);
