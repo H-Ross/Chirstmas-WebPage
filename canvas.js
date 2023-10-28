@@ -3,10 +3,12 @@ const canvas = document.createElement('canvas');
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
+
 window.addEventListener("resize", function () {
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
 });
+
 snowfalldiv.appendChild(canvas);
 
 const w = canvas.width;
