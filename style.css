@@ -51,9 +51,10 @@ body {
 
 #santaSleigh {
     height: auto;
-    width: 150px;
+    width: 200px;
     position: relative;
     animation: mySlide 10s 1 forwards;
+    transform: translate(0%, -140%);
 }
 
 @keyframes mySlide {
@@ -104,6 +105,26 @@ body {
     transform: translate(-50%, -20%);
     text-align: center;
 }
+
+.bow {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-right: 100px solid transparent;
+    transform: translate(60%, 300%);
+}
+
+.bow2 {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+    transform: translate(50%, 200%);
+}
+
+
+
+
 
 .lid {
     width: 300px;
@@ -203,5 +224,15 @@ body {
     #santaSleigh {
         width: 400px;
     }
+
+
+    .bow {
+        transform: translate(20%, 300%);
+    }
+
+    .bow2 {
+        transform: translate(90%, 200%);
+    }
+
 
 }
