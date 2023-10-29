@@ -32,12 +32,12 @@ body {
 }
 
 .snowfall .info h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .snowfall .info h2 {
-    font-size: 0.5em;
+    font-size: 1.5em;
     text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -47,7 +47,7 @@ body {
 } */
 
 #daily-image {
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
@@ -81,8 +81,8 @@ body {
 }
 
 .box {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 350px;
     position: absolute;
 
     top: 50%;
@@ -92,7 +92,7 @@ body {
 }
 
 .lid {
-    width: 200px;
+    width: 300px;
     height: 40px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -100,7 +100,7 @@ body {
     background-color: rgb(234, 18, 18);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 800%);
+    transform: translate(-50%, 500%);
     text-align: center;
 }
 
@@ -115,18 +115,18 @@ body {
 .box span:first-child {
     width: 100%;
     height: 40px;
-    top: 70px;
+    top: 35%;
 }
 
 .box span:last-child,
 .lid span {
     width: 40px;
     height: 100%;
-    left: 85px;
+    left: 45%;
 }
 
 .lid span {
-    left: 87px;
+    left: 45%;
 }
 
 @media only screen and (min-width: 768px) {
