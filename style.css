@@ -111,7 +111,7 @@ body {
     height: 0;
     border-bottom: 100px solid red;
     border-right: 100px solid transparent;
-    transform: translate(60%, 300%);
+    transform: translate(30%, 250%);
 }
 
 .bow2 {
@@ -119,7 +119,7 @@ body {
     height: 0;
     border-bottom: 100px solid red;
     border-left: 100px solid transparent;
-    transform: translate(50%, 200%);
+    transform: translate(80%, 150%);
 }
 
 
