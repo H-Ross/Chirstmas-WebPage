@@ -24,7 +24,7 @@ body {
     color: #fff;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
     text-align: center;
     box-shadow: 0px 0.5px 15px rgba(0, 0, 0, 0.9);
     padding: 10px 35px;
@@ -48,14 +48,10 @@ body {
 
 
 #santaSleigh {
-
     height: auto;
     width: 150px;
     position: relative;
     animation: mySlide 10s 1 forwards;
-
-
-
 }
 
 @keyframes mySlide {
@@ -97,11 +93,11 @@ body {
 
 .box {
     width: 300px;
-    height: 350px;
+    height: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
     text-align: center;
 }
 
@@ -114,7 +110,7 @@ body {
     background-color: rgb(234, 18, 18);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 500%);
+    transform: translate(-50%, 850%);
     text-align: center;
 }
 
@@ -171,7 +167,7 @@ body {
     .lid {
         width: 600px;
         height: 80px;
-        transform: translate(-50%, 235%);
+        transform: translate(-50%, 435%);
     }
 
     .box {
