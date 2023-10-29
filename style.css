@@ -46,15 +46,11 @@ body {
     height: auto;
 }
 
-#santa {
-    width: 100%;
-    overflow: hidden;
-}
 
 #santaSleigh {
 
     height: auto;
-    width: 400px;
+    width: 150px;
     position: relative;
     animation: mySlide 8s 1 forwards;
 
@@ -202,6 +198,10 @@ body {
     .present .box h1 {
         font-size: 150px;
         transform: translate(0%, 100%);
+    }
+
+    #santaSleigh {
+        width: 400px;
     }
 
 }
