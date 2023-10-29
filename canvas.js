@@ -55,9 +55,10 @@ class Snowfall {
     };
 }
 
-function updateImage() {
-    const currentDate = new Date(2023, 11, 3);
+const currentDate = new Date(2023, 11, 1);
+function updateContent() {
     const currentDay = currentDate.getDate();
+    const month = currentDate.getMonth() + 1;
 
     // You can create an array of image URLs for each day
     const imageUrls = [
@@ -74,11 +75,21 @@ function updateImage() {
 
     ];
 
+    // Set the advent count
+    const adventCount = document.getElementById("advent-count");
+    adventCount.textContent = currentDay;
+
+
+    // Set the date
+    // const dateContent = document.getElementById("date");
+    // dateContent.textContent = currentDay + "/" + month;
+
+
     // Set the image source based on the current day
     const dailyImage = document.getElementById("daily-image");
     dailyImage.src = imageUrls[currentDay - 1];
 
-    // Set the movie platform source based on the current day
+    // Set the movie platform content based on the current day
     const dailyPlatform = document.getElementById("daily-platform");
     dailyPlatform.textContent = moviePlatforms[currentDay - 1];
 }
@@ -86,4 +97,4 @@ function updateImage() {
 setInterval(() => Snowfall.snowFall(), 20);
 
 // Call the updateImage function when the page loads
-window.onload = updateImage;
+window.onload = updateContent;

@@ -41,22 +41,13 @@ body {
     text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* .snowfall .info p {
-    font-size: 1.5em;
-    text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
-} */
-
 #daily-image {
     width: 150px;
     height: auto;
 }
 
-
-
 .present:hover {
     opacity: 0;
-
-    /* Expand the present on hover to reveal .info */
 }
 
 .info:hover {
@@ -84,7 +75,6 @@ body {
     width: 300px;
     height: 350px;
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -129,28 +119,22 @@ body {
     left: 45%;
 }
 
-@media only screen and (min-width: 768px) {
 
-    .snowfall .info {
-        position: absolute;
-        color: #fff;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        box-shadow: 0px 0.5px 15px rgba(0, 0, 0, 0.9);
-        padding: 10px 35px;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
+.present .box h1 {
+    color: white;
+    font-size: 80px;
+    transform: translate(0%, 110%);
+}
+
+
+@media only screen and (min-width: 768px) {
 
     .snowfall .info h1 {
         font-size: 3.5em;
-        text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
     }
 
     .snowfall .info h2 {
         font-size: 2.5em;
-        text-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.5);
     }
 
     #daily-image {
@@ -161,43 +145,33 @@ body {
     .lid {
         width: 500px;
         height: 80px;
-        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        padding: 0 2px;
-        background-color: rgb(234, 18, 18);
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, 235%);
-        text-align: center;
     }
 
     .box {
         width: 500px;
         height: 500px;
-        position: absolute;
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
     }
 
 
     .box span:first-child {
-        width: 100%;
         height: 80px;
-        top: 200px;
+        top: 180px;
     }
 
     .box span:last-child,
     .lid span {
         width: 80px;
-        height: 100%;
         left: 220px;
     }
 
     .lid span {
         left: 222px;
+    }
+
+    .present .box h1 {
+        font-size: 150px;
+        transform: translate(0%, 70%);
     }
 
 }
