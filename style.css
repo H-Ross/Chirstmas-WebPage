@@ -96,8 +96,6 @@ body {
 
 .box {
     width: 300px;
-
-    /*fix height */
     height: 400px;
     position: absolute;
     top: 50%;
@@ -137,6 +135,7 @@ body {
     left: 50%;
     transform: translate(-50%, 800%);
     text-align: center;
+    display: none;
 }
 
 .box span,
