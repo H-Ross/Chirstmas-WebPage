@@ -46,6 +46,34 @@ body {
     height: auto;
 }
 
+#santa {
+    width: 100%;
+    overflow: hidden;
+}
+
+#santaSleigh {
+
+    height: auto;
+    width: 400px;
+    position: relative;
+    animation: mySlide 8s 1 forwards;
+
+
+
+}
+
+@keyframes mySlide {
+    from {
+        margin-right: 0%;
+    }
+
+    to {
+        margin-left: 100%;
+    }
+
+
+}
+
 .present:hover {
     opacity: 0;
 }
@@ -126,6 +154,8 @@ body {
     transform: translate(0%, 110%);
 }
 
+
+/* styling for desktop */
 
 @media only screen and (min-width: 768px) {
 
