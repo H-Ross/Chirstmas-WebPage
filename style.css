@@ -138,40 +138,40 @@ body {
     }
 
     #daily-image {
-        width: 250px;
+        width: 300px;
         height: auto;
     }
 
     .lid {
-        width: 500px;
+        width: 600px;
         height: 80px;
         transform: translate(-50%, 235%);
     }
 
     .box {
-        width: 500px;
-        height: 500px;
+        width: 600px;
+        height: 600px;
     }
 
 
     .box span:first-child {
-        height: 80px;
-        top: 180px;
+        height: 90px;
+        top: 220px;
     }
 
     .box span:last-child,
     .lid span {
-        width: 80px;
-        left: 220px;
+        width: 90px;
+        left: 260px;
     }
 
     .lid span {
-        left: 222px;
+        left: 262px;
     }
 
     .present .box h1 {
         font-size: 150px;
-        transform: translate(0%, 70%);
+        transform: translate(0%, 100%);
     }
 
 }
