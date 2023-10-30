@@ -1,3 +1,5 @@
 # Christmas-WebPage
 Advent calendar of xmas movies.
-Hover over the present to see the daily movie and which platform it could be found on.
+Click the present to see the daily movie, and which platform it could be found on.
+
+To visit the website Click [here](https://h-ross.github.io/Christmas-WebPage/).

@@ -116,7 +116,7 @@ present.addEventListener("touchend", function () {
 });
 
 
-
+// removes santa after moving
 const santaSleigh = document.getElementById("santaSleigh");
 
 santaSleigh.addEventListener("animationend", function () {
