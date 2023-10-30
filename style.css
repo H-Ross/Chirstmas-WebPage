@@ -131,7 +131,7 @@ body {
     background-color: rgb(234, 18, 18);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, 305%);
     text-align: center;
     display: block;
 }
@@ -224,11 +224,16 @@ body {
 
 
     .bow {
-        transform: translate(20%, 400%);
+        transform: translate(20%, 420%);
     }
 
     .bow2 {
-        transform: translate(90%, 300%);
+        transform: translate(90%, 320%);
+    }
+
+    #santaSleigh {
+        transform: translate(0%, -100%);
+
     }
 
 
