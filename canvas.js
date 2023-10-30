@@ -99,8 +99,12 @@ function updateContent() {
 // when the present is clicked function
 const present = document.querySelector(".present");
 
-present.addEventListener("click", function () {
+present.addEventListener("mousedown", function () {
     present.style.opacity = "0";
+});
+
+present.addEventListener("mouseup", function () {
+    present.style.opacity = "1";
 });
 
 
