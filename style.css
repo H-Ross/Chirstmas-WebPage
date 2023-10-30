@@ -189,7 +189,7 @@ body {
     .lid {
         width: 600px;
         height: 80px;
-        transform: translate(-50%, 405%);
+        transform: translate(-50%, 230%);
     }
 
     .box {
@@ -224,11 +224,11 @@ body {
 
 
     .bow {
-        transform: translate(20%, 427%);
+        transform: translate(20%, 290%);
     }
 
     .bow2 {
-        transform: translate(90%, 327%);
+        transform: translate(90%, 190%);
     }
 
     #santaSleigh {
