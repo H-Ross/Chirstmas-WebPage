@@ -55,7 +55,7 @@ class Snowfall {
     };
 }
 
-const currentDate = new Date(2023, 11, 3);
+const currentDate = new Date(2023, 11, 1);
 
 function updateContent() {
     const currentDay = currentDate.getDate();
@@ -107,6 +107,13 @@ present.addEventListener("mouseup", function () {
     present.style.opacity = "1";
 });
 
+present.addEventListener("touchstart", function () {
+    present.style.opacity = "0";
+});
+
+present.addEventListener("touchend", function () {
+    present.style.opacity = "1";
+});
 
 
 
