@@ -107,7 +107,7 @@ body {
     height: 0;
     border-bottom: 100px solid rgb(12, 95, 12);
     border-right: 100px solid transparent;
-    transform: translate(30%, 250%);
+    transform: translate(40%, 250%);
 }
 
 .bow2 {
@@ -115,7 +115,7 @@ body {
     height: 0;
     border-bottom: 100px solid rgb(12, 95, 12);
     border-left: 100px solid transparent;
-    transform: translate(80%, 150%);
+    transform: translate(70%, 150%);
 }
 
 
@@ -131,7 +131,7 @@ body {
     background-color: rgb(234, 18, 18);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 305%);
+    transform: translate(-50%, 300%);
     text-align: center;
     display: block;
 }
