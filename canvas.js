@@ -116,6 +116,13 @@ present.addEventListener("touchend", function () {
 });
 
 
+const santaSleigh = document.getElementById("santaSleigh");
+
+santaSleigh.addEventListener("animationend", function () {
+    santaSleigh.style.display = "none";
+});
+
+
 
 setInterval(() => Snowfall.snowFall(), 20);
 
