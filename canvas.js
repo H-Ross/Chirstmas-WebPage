@@ -55,7 +55,7 @@ class Snowfall {
     };
 }
 
-const currentDate = new Date(2023, 11, 1);
+const currentDate = new Date(2023, 11, 3);
 
 function updateContent() {
     const currentDay = currentDate.getDate();
