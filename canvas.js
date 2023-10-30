@@ -94,7 +94,21 @@ function updateContent() {
     dailyPlatform.textContent = moviePlatforms[currentDay - 1];
 }
 
+
+
+// when the present is clicked function
+const present = document.querySelector(".present");
+
+present.addEventListener("click", function () {
+    present.style.opacity = "0";
+});
+
+
+
+
 setInterval(() => Snowfall.snowFall(), 20);
 
 // Call the updateContent function when the page loads
 window.onload = updateContent;
+
+
