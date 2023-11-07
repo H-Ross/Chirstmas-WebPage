@@ -55,11 +55,13 @@ class Snowfall {
     };
 }
 
-const currentDate = new Date(2023, 11, 1);
+const currentDate = new Date(2023, 11, 24);
 
 function updateContent() {
     const currentDay = currentDate.getDate();
     const month = currentDate.getMonth() + 1;
+
+
 
     const imageUrls = [
         "./images/1_KarlBertilJonsson.jpg",
@@ -77,7 +79,7 @@ function updateContent() {
         "./images/13_AlfSpecialChristmas.jpg",
         "./images/14_Holiday.jpg",
         "./images/15_Noelle.jpg",
-        "./images/16_ChristmasWithAViee.jpg",
+        "./images/16_ChristmasWithAVieew.jpg",
         "./images/17_DecktheHalls.jpg",
         "./images/18_ABoyCalledChristmas.png",
         "./images/19_theKnightbeforeChristmas.jpg",
@@ -85,7 +87,7 @@ function updateContent() {
         "./images/21_ChristmasatthePlaza.jpg",
         "./images/22_ChristmaswiththeKRanks.jpg",
         "./images/23_LoveActually.jpg",
-        "./images/24_SagonomKarl-BertilJonssonsJulafton.jpg"
+        "./images/24_SaganomKarl-BertilJonssonsJulafton.jpg"
     ];
 
     const moviePlatforms = [
