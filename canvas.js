@@ -62,16 +62,58 @@ function updateContent() {
     const month = currentDate.getMonth() + 1;
 
     const imageUrls = [
-        "./images/grinch.jpg",
-        "./images/polarExpress.jpg",
-        "./images/homeAlone.jpg",
-        // Add URLs for each day
+        "./images/1_KarlBertilJonsson.jpg",
+        "./images/2_HolidayInTheWild.jpg",
+        "./images/3_theFamilyStone.jpg",
+        "./images/4_FamilySwitch.jpg",
+        "./images/5_Tomtenärfar.jpg",
+        "./images/6_Grinch.jpg",
+        "./images/7_ChristmasChronicles.jpg",
+        "./images/8_TwastheNight.jpg",
+        "./images/9_EnUnderbarJävlaJul.jpg",
+        "./images/10_HomeAlone.jpg",
+        "./images/11_Scrooge.jpg",
+        "./images/12_12DatesofChristmas.jpg",
+        "./images/13_AlfSpecialChristmas.jpg",
+        "./images/14_Holiday.jpg",
+        "./images/15_Noelle.jpg",
+        "./images/16_ChristmasWithAViee.jpg",
+        "./images/17_DecktheHalls.jpg",
+        "./images/18_ABoyCalledChristmas.png",
+        "./images/19_theKnightbeforeChristmas.jpg",
+        "./images/20_thePrincessSwitch.jpg",
+        "./images/21_ChristmasatthePlaza.jpg",
+        "./images/22_ChristmaswiththeKRanks.jpg",
+        "./images/23_LoveActually.jpg",
+        "./images24_SagonomKarl-BertilJonssonsJulafton.jpg/"
     ];
 
     const moviePlatforms = [
         "Netflix",
+        "Netflix",
+        "Disney+",
+        "Netflix",
+        "Netflix",
+        "Netflix",
+        "Netflix",
+        "Disney+",
+        "Disney+",
+        "Disney+",
+        "Netflix",
         "Disney+",
         "HBO Max",
+        "Netflix",
+        "Netflix",
+        "Netflix",
+        "Disney+",
+        "Netflix",
+        "Netflix",
+        "Netflix",
+        "Find yourself",
+        "Find yourself",
+        "Netflix",
+        "SVT Play"
+
 
     ];
 
