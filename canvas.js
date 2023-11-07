@@ -114,20 +114,23 @@ function updateContent() {
         "Find yourself",
         "Netflix",
         "SVT Play"
-
-
     ];
 
     // Set the advent count
     const adventCount = document.getElementById("advent-count");
     adventCount.textContent = currentDay;
 
-    if (currentDate > 9) {
+    if (currentDay > 9) {
         if ((window.matchMedia("(min-width: 768px)").matches)) {
             adventCount.style.transform = "translate(-35%, 100%)";
+        } else {
+            adventCount.style.transform = "translate(-40%, 110%)";
         }
-        else {
-            adventCount.style.transform = "translate(-35%, 110%)";
+    } else {
+        if ((window.matchMedia("(min-width: 768px)").matches)) {
+            adventCount.style.transform = "translate(0%, 100%)";
+        } else {
+            adventCount.style.transform = "translate(0%, 110%)";
         }
 
     }
