@@ -85,7 +85,7 @@ function updateContent() {
         "./images/21_ChristmasatthePlaza.jpg",
         "./images/22_ChristmaswiththeKRanks.jpg",
         "./images/23_LoveActually.jpg",
-        "./images24_SagonomKarl-BertilJonssonsJulafton.jpg/"
+        "./images/24_SagonomKarl-BertilJonssonsJulafton.jpg"
     ];
 
     const moviePlatforms = [
