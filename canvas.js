@@ -62,7 +62,6 @@ function updateContent() {
     const month = currentDate.getMonth() + 1;
 
 
-
     const imageUrls = [
         "./images/1_KarlBertilJonsson.jpg",
         "./images/2_HolidayInTheWild.jpg",
@@ -122,6 +121,17 @@ function updateContent() {
     // Set the advent count
     const adventCount = document.getElementById("advent-count");
     adventCount.textContent = currentDay;
+
+    if (currentDate > 9) {
+        if ((window.matchMedia("(min-width: 768px)").matches)) {
+            adventCount.style.transform = "translate(-35%, 100%)";
+        }
+        else {
+            adventCount.style.transform = "translate(-35%, 110%)";
+        }
+
+    }
+
 
 
     // Set the date
