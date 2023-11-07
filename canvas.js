@@ -55,100 +55,110 @@ class Snowfall {
     };
 }
 
-const currentDate = new Date(2023, 11, 24);
+const currentDate = new Date(2023, 10, 1);
 
 function updateContent() {
     const currentDay = currentDate.getDate();
     const month = currentDate.getMonth() + 1;
 
+    if (month != 12) {
+        const adventCount = document.getElementById("advent-count");
+        adventCount.textContent = "0";
+    }
+    else {
+        const imageUrls = [
+            "./images/1_KarlBertilJonsson.jpg",
+            "./images/2_HolidayInTheWild.jpg",
+            "./images/3_theFamilyStone.jpg",
+            "./images/4_FamilySwitch.jpg",
+            "./images/5_Tomtenärfar.jpg",
+            "./images/6_Grinch.jpg",
+            "./images/7_ChristmasChronicles.jpg",
+            "./images/8_TwastheNight.jpg",
+            "./images/9_EnUnderbarJävlaJul.jpg",
+            "./images/10_HomeAlone.jpg",
+            "./images/11_Scrooge.jpg",
+            "./images/12_12DatesofChristmas.jpg",
+            "./images/13_AlfSpecialChristmas.jpg",
+            "./images/14_Holiday.jpg",
+            "./images/15_Noelle.jpg",
+            "./images/16_ChristmasWithAVieew.jpg",
+            "./images/17_DecktheHalls.jpg",
+            "./images/18_ABoyCalledChristmas.png",
+            "./images/19_theKnightbeforeChristmas.jpg",
+            "./images/20_thePrincessSwitch.jpg",
+            "./images/21_ChristmasatthePlaza.jpg",
+            "./images/22_ChristmaswiththeKRanks.jpg",
+            "./images/23_LoveActually.jpg",
+            "./images/24_SaganomKarl-BertilJonssonsJulafton.jpg"
+        ];
 
-    const imageUrls = [
-        "./images/1_KarlBertilJonsson.jpg",
-        "./images/2_HolidayInTheWild.jpg",
-        "./images/3_theFamilyStone.jpg",
-        "./images/4_FamilySwitch.jpg",
-        "./images/5_Tomtenärfar.jpg",
-        "./images/6_Grinch.jpg",
-        "./images/7_ChristmasChronicles.jpg",
-        "./images/8_TwastheNight.jpg",
-        "./images/9_EnUnderbarJävlaJul.jpg",
-        "./images/10_HomeAlone.jpg",
-        "./images/11_Scrooge.jpg",
-        "./images/12_12DatesofChristmas.jpg",
-        "./images/13_AlfSpecialChristmas.jpg",
-        "./images/14_Holiday.jpg",
-        "./images/15_Noelle.jpg",
-        "./images/16_ChristmasWithAVieew.jpg",
-        "./images/17_DecktheHalls.jpg",
-        "./images/18_ABoyCalledChristmas.png",
-        "./images/19_theKnightbeforeChristmas.jpg",
-        "./images/20_thePrincessSwitch.jpg",
-        "./images/21_ChristmasatthePlaza.jpg",
-        "./images/22_ChristmaswiththeKRanks.jpg",
-        "./images/23_LoveActually.jpg",
-        "./images/24_SaganomKarl-BertilJonssonsJulafton.jpg"
-    ];
+        const moviePlatforms = [
+            "Netflix",
+            "Netflix",
+            "Disney+",
+            "Netflix",
+            "Netflix",
+            "Netflix",
+            "Netflix",
+            "Disney+",
+            "Disney+",
+            "Disney+",
+            "Netflix",
+            "Disney+",
+            "HBO Max",
+            "Netflix",
+            "Netflix",
+            "Netflix",
+            "Disney+",
+            "Netflix",
+            "Netflix",
+            "Netflix",
+            "Find yourself",
+            "Find yourself",
+            "Netflix",
+            "SVT Play"
+        ];
 
-    const moviePlatforms = [
-        "Netflix",
-        "Netflix",
-        "Disney+",
-        "Netflix",
-        "Netflix",
-        "Netflix",
-        "Netflix",
-        "Disney+",
-        "Disney+",
-        "Disney+",
-        "Netflix",
-        "Disney+",
-        "HBO Max",
-        "Netflix",
-        "Netflix",
-        "Netflix",
-        "Disney+",
-        "Netflix",
-        "Netflix",
-        "Netflix",
-        "Find yourself",
-        "Find yourself",
-        "Netflix",
-        "SVT Play"
-    ];
+        // Set the advent count
+        const adventCount = document.getElementById("advent-count");
+        adventCount.textContent = currentDay;
 
-    // Set the advent count
-    const adventCount = document.getElementById("advent-count");
-    adventCount.textContent = currentDay;
-
-    if (currentDay > 9) {
-        if ((window.matchMedia("(min-width: 768px)").matches)) {
-            adventCount.style.transform = "translate(-35%, 100%)";
-        } else {
-            adventCount.style.transform = "translate(-40%, 110%)";
+        if (currentDay > 9) {
+            if ((window.matchMedia("(min-width: 768px)").matches)) {
+                adventCount.style.transform = "translate(-35%, 100%)";
+            }
+            else {
+                adventCount.style.transform = "translate(-40%, 110%)";
+            }
         }
-    } else {
-        if ((window.matchMedia("(min-width: 768px)").matches)) {
-            adventCount.style.transform = "translate(0%, 100%)";
-        } else {
-            adventCount.style.transform = "translate(0%, 110%)";
+        else {
+            if ((window.matchMedia("(min-width: 768px)").matches)) {
+                adventCount.style.transform = "translate(0%, 100%)";
+            }
+            else {
+                adventCount.style.transform = "translate(0%, 110%)";
+            }
+
         }
+
+
+
+        // Set the date
+        // const dateContent = document.getElementById("date");
+        // dateContent.textContent = currentDay + "/" + month;
+
+
+        // Set the image source based on the current day
+        const dailyImage = document.getElementById("daily-image");
+        dailyImage.src = imageUrls[currentDay - 1];
+
+        // Set the movie platform content based on the current day
+        const dailyPlatform = document.getElementById("daily-platform");
+        dailyPlatform.textContent = moviePlatforms[currentDay - 1];
 
     }
 
-
-
-    // Set the date
-    // const dateContent = document.getElementById("date");
-    // dateContent.textContent = currentDay + "/" + month;
-
-
-    // Set the image source based on the current day
-    const dailyImage = document.getElementById("daily-image");
-    dailyImage.src = imageUrls[currentDay - 1];
-
-    // Set the movie platform content based on the current day
-    const dailyPlatform = document.getElementById("daily-platform");
-    dailyPlatform.textContent = moviePlatforms[currentDay - 1];
 }
 
 
