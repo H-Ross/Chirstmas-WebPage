@@ -119,9 +119,6 @@ body {
 }
 
 
-
-
-
 .lid {
     width: 300px;
     height: 40px;
@@ -194,7 +191,7 @@ body {
     .lid {
         width: 600px;
         height: 80px;
-        transform: translate(-50%, 97%);
+        transform: translate(-50%, 94%);
     }
 
     .box {
@@ -229,7 +226,6 @@ body {
         transform: translate(0%, -200%);
 
     }
-
 
     .bow {
         transform: translate(20%, 190%);

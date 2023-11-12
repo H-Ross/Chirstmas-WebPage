@@ -108,7 +108,7 @@ function updateContent() {
             "Disney+",
             "HBO Max",
             "Netflix",
-            "Netflix",
+            "Disney+",
             "Netflix",
             "Disney+",
             "Netflix",
