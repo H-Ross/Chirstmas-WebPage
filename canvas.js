@@ -55,11 +55,12 @@ class Snowfall {
     };
 }
 
-const currentDate = new Date(2023, 10, 1);
+const currentDate = new Date(2023, 11, 20);
+const month = currentDate.getMonth() + 1;
 
 function updateContent() {
     const currentDay = currentDate.getDate();
-    const month = currentDate.getMonth() + 1;
+
 
     if (month != 12) {
         const adventCount = document.getElementById("advent-count");
@@ -166,16 +167,18 @@ function updateContent() {
 // when the present is clicked function
 const present = document.querySelector(".present");
 
-present.addEventListener("mousedown", function () {
-    present.style.opacity = "0";
+present.addEventListener("mouseenter", function () {
+    if (month == 12)
+        present.style.opacity = "0";
 });
 
-present.addEventListener("mouseup", function () {
+present.addEventListener("mouseleave", function () {
     present.style.opacity = "1";
 });
 
 present.addEventListener("touchstart", function () {
-    present.style.opacity = "0";
+    if (month == 12)
+        present.style.opacity = "0";
 });
 
 present.addEventListener("touchend", function () {
