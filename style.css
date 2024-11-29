@@ -107,7 +107,7 @@ body {
     height: 0;
     border-bottom: 100px solid rgb(12, 95, 12);
     border-right: 100px solid transparent;
-    transform: translate(40%, 200%);
+    transform: translate(40%, 100%);
     position: fixed;
 }
 
