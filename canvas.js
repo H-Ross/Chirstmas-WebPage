@@ -7,12 +7,15 @@ canvas.width = window.innerWidth;
 window.addEventListener("resize", function () {
     canvas.height = window.innerHeight;
     canvas.width = window.innerWidth;
+    w = canvas.width;
+    h = canvas.height;
+    
 });
 
 snowfalldiv.appendChild(canvas);
 
-const w = canvas.width;
-const h = canvas.height;
+let w = canvas.width;
+let h = canvas.height;
 
 const ctx = canvas.getContext('2d');
 const backgroundImage = new Image();
@@ -110,12 +113,12 @@ function updateContent() {
             "Disney+",
             "Netflix",
             "TV4+",
-            "Find yourself",
+            "Find Online",
             "TV4+",
             "Netflix",
             "Netflix",
-            "Find yourself",
-            "Find yourself",
+            "Find Online",
+            "Find Online",
             "Netflix",
             "Netflix",
             "SVT Play"
@@ -161,6 +164,9 @@ function updateContent() {
     }
 
 }
+
+
+
 
 
 
