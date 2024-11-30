@@ -57,7 +57,7 @@ class Snowfall {
         }
     };
 }
-const currentDate = new Date('2024-12-20');
+const currentDate = new Date('2024-12-10');
 //const currentDate = new Date();
 const month = currentDate.getMonth() + 1;
 
@@ -107,7 +107,7 @@ function updateContent() {
             "Netflix",
             "Disney+",
             "Disney+",
-            "Viaplay/Prime",
+            "Find Online",
             "Disney+",
             "TV4+",
             "Disney+",
@@ -160,13 +160,19 @@ function updateContent() {
         // Set the movie platform content based on the current day
         const dailyPlatform = document.getElementById("daily-platform");
         const platform = moviePlatforms[currentDay - 1];
-        console.log("Platform:", platform);
 
         // Clear previous content
         dailyPlatform.innerHTML = '';
 
         if (platform === "Find Online") {
-            dailyPlatform.innerHTML = `<a href='https://google.com' target='_blank'>${platform}</a>`;
+            let site = '';
+            if (currentDay === 10)
+                site = 'https://www.dailymotion.com/video/x8cmcx1';
+            else if (currentDay === 20)
+                site = 'https://archive.org/details/a-charlie-brown-christmas-original-version/A+Charlie+Brown+Christmas+Remastered+(Sort+of).mp4';
+            else if (currentDay === 21)
+                site = 'https://www.dailymotion.com/video/x82evr8';
+            dailyPlatform.innerHTML = `<a href='${site}' target='_blank'>Click Here</a>`;
         } else {
             dailyPlatform.textContent = platform;
         }
@@ -184,26 +190,33 @@ function updateContent() {
 const present = document.querySelector(".present");
 const test = document.getElementById('test');
 
-present.addEventListener("mouseenter", function () {
-    if (month == 12)
+present.addEventListener("click", function () {
+    if (month == 12) {
         present.remove();
-    setTimeout(() => {
-        test.appendChild(present);
-    }, 5000); // Adjust the delay as needed
+        setTimeout(() => {
+            test.appendChild(present);
+        }, 5000); // Adjust the delay as needed
+
+    }
 });
 
-present.addEventListener("mouseleave", function () {
-    test.appendChild(present);
-});
+// present.addEventListener("mouseleave", function () {
+//     //present.style.opacity = "0";
+// });
 
 present.addEventListener("touchstart", function () {
-    if (month == 12)
-        present.style.opacity = "0";
+    if (month == 12) {
+        present.remove();
+        setTimeout(() => {
+            test.appendChild(present);
+        }, 5000); // Adjust the delay as needed
+    }
+        //present.style.opacity = "0";
 });
 
-present.addEventListener("touchend", function () {
-    present.style.opacity = "1";
-});
+// present.addEventListener("touchend", function () {
+//     present.style.opacity = "1";
+// });
 
 
 // removes santa after moving
@@ -213,14 +226,6 @@ santaSleigh.addEventListener("animationend", function () {
     santaSleigh.style.display = "none";
 });
 
-document.querySelector('.Snowfall').addEventListener('click', function(event) {
-    // Ensure the default action is not prevented
-    
-    
-   event.preventDefault(); // Comment this out if present
-    console.log('l');
-    
-});
 
 
 setInterval(() => Snowfall.snowFall(), 20);

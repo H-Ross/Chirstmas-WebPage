@@ -164,7 +164,9 @@ body {
 }
 
 
-
+a {
+    color: rgb(196, 63, 232);
+}
 
 #advent-count {
     color: white;
