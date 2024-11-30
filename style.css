@@ -5,7 +5,8 @@
 }
 
 body {
-    overflow-x: hidden;
+   
+    overflow: hidden;
 }
 
 
@@ -42,7 +43,7 @@ body {
 }
 
 #daily-image {
-    width: 75px;
+    width: 100px;
     height: auto;
 }
 
@@ -94,7 +95,7 @@ body {
 
 .box {
     width: 300px;
-    height: 200px;
+    height: 250px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -162,7 +163,7 @@ body {
 #advent-count {
     color: white;
     font-size: 80px;
-    margin-top: -0.7em;
+    margin-top: -0.5em;
 }
 
 
