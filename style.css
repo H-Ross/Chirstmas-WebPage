@@ -123,13 +123,14 @@ body {
 .lid {
     width: 300px;
     height: 40px;
+    position: fixed;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0 2px;
     background-color: rgb(234, 18, 18);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 270%);
+    transform: translate(-50%, -200%);
     text-align: center;
     display: block;
 }
@@ -192,7 +193,7 @@ body {
     .lid {
         width: 600px;
         height: 80px;
-        transform: translate(-50%, 94%);
+        transform: translate(-50%, -320%);
     }
 
     .box {
