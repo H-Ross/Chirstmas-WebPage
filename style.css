@@ -123,7 +123,7 @@ body {
 .lid {
     width: 300px;
     height: 40px;
-    position: fixed;
+    position: absolute;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0 2px;
@@ -216,9 +216,11 @@ body {
         left: 262px;
     }
 
-    .present .box h1 {
+   
+    #advent-count {
+        
         font-size: 150px;
-        transform: translate(0%, 100%);
+        margin-top: 0;
     }
 
     #santaSleigh {
