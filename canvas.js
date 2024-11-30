@@ -57,7 +57,7 @@ class Snowfall {
         }
     };
 }
-const currentDate = new Date('2024-12-20');
+const currentDate = new Date('2024-12-15');
 //const currentDate = new Date();
 const month = currentDate.getMonth() + 1;
 
