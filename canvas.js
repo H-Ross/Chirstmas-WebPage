@@ -9,7 +9,7 @@ window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
     w = canvas.width;
     h = canvas.height;
-    
+
 });
 
 snowfalldiv.appendChild(canvas);
@@ -133,16 +133,16 @@ function updateContent() {
             //     adventCount.style.transform = "translate(-35%, 100%)";
             // }
             //else {
-                adventCount.style.transform = "translate(-50%, 110%)";
-           // }
+            adventCount.style.transform = "translate(-50%, 110%)";
+            // }
         }
         else {
-          //  if ((window.matchMedia("(min-width: 768px)").matches)) {
+            //  if ((window.matchMedia("(min-width: 768px)").matches)) {
             //    adventCount.style.transform = "translate(0%, 100%)";
-           // }
+            // }
             //else {
-                adventCount.style.transform = "translate(0%, 110%)";
-           // }
+            adventCount.style.transform = "translate(0%, 110%)";
+            // }
 
         }
 
@@ -168,6 +168,8 @@ function updateContent() {
             let site = '';
             if (currentDay === 10)
                 site = 'https://www.dailymotion.com/video/x8cmcx1';
+            else if (currentDay === 16)
+                site = '';
             else if (currentDay === 20)
                 site = 'https://archive.org/details/a-charlie-brown-christmas-original-version/A+Charlie+Brown+Christmas+Remastered+(Sort+of).mp4';
             else if (currentDay === 21)
@@ -211,7 +213,7 @@ present.addEventListener("touchstart", function () {
             test.appendChild(present);
         }, 5000); // Adjust the delay as needed
     }
-        //present.style.opacity = "0";
+    //present.style.opacity = "0";
 });
 
 // present.addEventListener("touchend", function () {
