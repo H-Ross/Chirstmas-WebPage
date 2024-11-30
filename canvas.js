@@ -57,7 +57,7 @@ class Snowfall {
         }
     };
 }
-//const currentDate = new Date('2024-12-10');
+//const currentDate = new Date('2024-12-25');
 const currentDate = new Date();
 const month = currentDate.getMonth() + 1;
 const currentDay = currentDate.getDate();
@@ -69,6 +69,7 @@ function updateContent() {
     if (month != 12) {
         const adventCount = document.getElementById("advent-count");
         adventCount.textContent = "0";
+        adventCount.style.transform = "translate(0%, 110%)";
     }
     else {
         const imageUrls = [
