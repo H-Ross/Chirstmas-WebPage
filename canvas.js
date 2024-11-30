@@ -60,6 +60,7 @@ class Snowfall {
 const currentDate = new Date('2024-12-10');
 //const currentDate = new Date();
 const month = currentDate.getMonth() + 1;
+const currentDay = currentDate.getDate();
 
 function updateContent() {
     const currentDay = currentDate.getDate();
@@ -193,7 +194,7 @@ const present = document.querySelector(".present");
 const test = document.getElementById('test');
 
 present.addEventListener("click", function () {
-    if (month == 12) {
+    if (month == 12 && currentDay < 25) {
         present.remove();
         setTimeout(() => {
             test.appendChild(present);
@@ -207,7 +208,7 @@ present.addEventListener("click", function () {
 // });
 
 present.addEventListener("touchstart", function () {
-    if (month == 12) {
+    if (month == 12 && currentDay < 25) {
         present.remove();
         setTimeout(() => {
             test.appendChild(present);
