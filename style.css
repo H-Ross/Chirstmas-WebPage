@@ -111,9 +111,9 @@ body {
     width: 0;
     height: 0;
     position: absolute;
-    border-bottom: 100px solid rgb(12, 95, 12);
-    border-right: 100px solid transparent;
-    transform: translate(40%, 110%);
+    border-bottom: 50px solid rgb(12, 95, 12);
+    border-right: 50px solid transparent;
+    transform: translate(220%, -100%);
     
 }
 
@@ -121,10 +121,9 @@ body {
     width: 0;
     height: 0;
     position: absolute;
-    border-bottom: 100px solid rgb(12, 95, 12);
-    border-left: 100px solid transparent;
-    transform: translate(70%, 110%);
-
+    border-bottom: 50px solid rgb(12, 95, 12);
+    border-left: 50px solid transparent;
+    transform: translate(310%, -100%);
 }
 
 
