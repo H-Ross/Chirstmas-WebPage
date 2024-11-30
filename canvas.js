@@ -57,7 +57,7 @@ class Snowfall {
         }
     };
 }
-const currentDate = new Date('2024-12-12');
+const currentDate = new Date('2024-12-22');
 //const currentDate = new Date();
 const month = currentDate.getMonth() + 1;
 
@@ -129,20 +129,20 @@ function updateContent() {
         adventCount.textContent = currentDay;
 
         if (currentDay > 9) {
-            if ((window.matchMedia("(min-width: 768px)").matches)) {
-                adventCount.style.transform = "translate(-35%, 100%)";
-            }
-            else {
-                adventCount.style.transform = "translate(-40%, 110%)";
-            }
+            // if ((window.matchMedia("(min-width: 768px)").matches)) {
+            //     adventCount.style.transform = "translate(-35%, 100%)";
+            // }
+            //else {
+                adventCount.style.transform = "translate(-50%, 110%)";
+           // }
         }
         else {
-            if ((window.matchMedia("(min-width: 768px)").matches)) {
-                adventCount.style.transform = "translate(0%, 100%)";
-            }
-            else {
+          //  if ((window.matchMedia("(min-width: 768px)").matches)) {
+            //    adventCount.style.transform = "translate(0%, 100%)";
+           // }
+            //else {
                 adventCount.style.transform = "translate(0%, 110%)";
-            }
+           // }
 
         }
 
