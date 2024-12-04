@@ -116,7 +116,7 @@ function updateContent() {
             "Netflix",
             "TV4 Play",
             "Prime/ViaPlay",
-            "TV4+",
+            "TV4 Play",
             "Netflix",
             "Netflix",
             "Find Online",
