@@ -115,7 +115,7 @@ function updateContent() {
             "Disney+",
             "Netflix",
             "TV4+",
-            "Find Online",
+            "Prime/ViaPlay",
             "TV4+",
             "Netflix",
             "Netflix",
@@ -170,8 +170,6 @@ function updateContent() {
             let site = '';
             if (currentDay === 10)
                 site = 'https://www.dailymotion.com/video/x8cmcx1';
-            else if (currentDay === 16)
-                site = '';
             else if (currentDay === 20)
                 site = 'https://archive.org/details/a-charlie-brown-christmas-original-version/A+Charlie+Brown+Christmas+Remastered+(Sort+of).mp4';
             else if (currentDay === 21)
